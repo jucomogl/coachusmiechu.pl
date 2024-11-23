@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page with Captions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="carousel.css">
+</head>
+<body>
+    <!-- Carousel Section -->
+    <div class="carousel-container">
+        <div class="qc-carousel">
+            <div class="carousel-slide">
+                <img src="cover-background.png" alt="Motivational Slide 1">
+                <div class="carousel-caption">
+                    <h2>Osiągnij swoje cele już dziś!</h2>
+                    <button class="cta-button">Dowiedz się więcej</button>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="quotes/quote1.png" alt="Motivational Slide 2">
+                <div class="carousel-caption">
+                    <h2>Twoja przyszłość zaczyna się teraz</h2>
+                    <button class="cta-button">Sprawdź ofertę</button>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                <div class="carousel-caption">
+                    <h2>Zainspiruj się naszymi historiami</h2>
+                    <button class="cta-button">Obejrzyj film</button>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allowfullscreen></iframe>
+                <div class="carousel-caption">
+                    <h2>Rozwijaj się każdego dnia</h2>
+                    <button class="cta-button">Rozpocznij teraz</button>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="quotes/quote2.png" alt="Motivational Slide 3">
+                <div class="carousel-caption">
+                    <h2>Uwierz w swoje możliwości</h2>
+                    <button class="cta-button">Zapisz się</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.qc-carousel').qcCarousel({
+                autoPlay: true,
+                delay: 3000,
+                transition: 'fade',
+            });
+        });
+    </script>
+</body>
+</html>
