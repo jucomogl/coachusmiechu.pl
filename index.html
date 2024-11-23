@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page with Carousel and Sections</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="carousel.css">
+</head>
+<body>
+    <!-- Carousel Section -->
+    <div class="carousel-container">
+        <div class="qc-carousel">
+            <div>
+                <img src="cover-background.png" alt="Motivational Slide 1">
+            </div>
+            <div>
+                <img src="quotes/quote1.png" alt="Motivational Slide 2">
+            </div>
+            <div>
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div>
+                <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div>
+                <img src="quotes/quote2.png" alt="Motivational Slide 3">
+            </div>
+        </div>
+    </div>
+
+    <!-- "Nie czekaj na lepszy moment!" Section -->
+    <section class="moment-section">
+        <div class="content-wrapper">
+            <div class="text-content">
+                <h2>Nie czekaj na lepszy moment!</h2>
+                <p>Twój nowy początek może nastąpić dziś! Odkryj potencjał, który w Tobie tkwi.</p>
+                <p>Zbuduj swoją pewność siebie! Zapisz się już dziś!</p>
+            </div>
+            <form class="signup-form">
+                <input type="text" placeholder="Imię" name="name" required>
+                <input type="email" placeholder="E-mail" name="email" required>
+                <button type="submit" class="cta-button">Zapisz się!</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- "Odkryj swoją wewnętrzną moc!" Section -->
+    <section class="inner-power-section">
+        <h2>Odkryj swoją wewnętrzną moc!</h2>
+        <p>CBT, czyli terapia poznawczo-behawioralna, to skuteczna metoda pomagająca w zmianach myśli i emocji.</p>
+        <div class="info-grid">
+            <div class="info-item">
+                <h3>Co to jest CBT?</h3>
+                <p>CBT to proces pomagający zrozumieć, jak nasze myśli wpływają na nasze emocje i działania.</p>
+            </div>
+            <div class="info-item">
+                <h3>Jak długo trwa proces coachingowy?</h3>
+                <p>Indywidualne podejście do Twoich potrzeb pozwala znaleźć skuteczne rozwiązanie w krótkim czasie.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- "Zanurz się w osobistej transformacji" Section -->
+    <section class="transformation-section">
+        <h2>Zanurz się w osobistej transformacji</h2>
+        <p>Zmiana życia na lepsze zaczyna się od pierwszego kroku. Osiągnij pewność siebie i autentyczność!</p>
+        <div class="cta-wrapper">
+            <button class="cta-button">Chcę zmienić swoje życie!</button>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-info">
+            <h3>Dlaczego warto pracować z coachem?</h3>
+            <ul>
+                <li>Rozwinięcie pewności siebie</li>
+                <li>Skuteczne osiąganie celów</li>
+                <li>Lepsze rozumienie swoich emocji</li>
+            </ul>
+            <h3>Jakie korzyści płyną z pracy z coachem?</h3>
+            <ul>
+                <li>Indywidualne podejście</li>
+                <li>Odkrycie własnej motywacji do działania</li>
+                <li>Wsparcie w trudnych chwilach</li>
+            </ul>
+        </div>
+        <p>&copy; 2024 Wszystkie prawa zastrzeżone.</p>
+    </footer>
+
+    <!-- Script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.qc-carousel').qcCarousel({
+                autoPlay: true,
+                delay: 3000,
+                transition: 'fade',
+            });
+        });
+    </script>
+</body>
+</html>

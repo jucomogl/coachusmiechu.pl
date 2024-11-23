@@ -1,0 +1,184 @@
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #ff008c;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Buttons */
+.cta-button {
+    display: inline-block;
+    background-color: #ff008c;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e60075;
+}
+
+/* Carousel Section */
+.carousel-container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.qc-carousel {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.qc-carousel div {
+    flex: 0 0 100%;
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.qc-carousel div img, .qc-carousel div iframe {
+    width: 100%;
+    height: auto;
+}
+
+.qc-carousel div iframe {
+    height: 100%;
+    width: 100%;
+}
+
+/* Section: Nie czekaj na lepszy moment! */
+.moment-section {
+    padding: 50px 10%;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.moment-section .text-content {
+    flex: 1 1 50%;
+}
+
+.moment-section .signup-form {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.signup-form input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.signup-form button {
+    width: 100%;
+}
+
+/* Section: Odkryj swoją wewnętrzną moc! */
+.inner-power-section {
+    padding: 50px 10%;
+    text-align: center;
+    background-color: #fff;
+}
+
+.inner-power-section .info-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.inner-power-section .info-item {
+    flex: 1 1 45%;
+    text-align: left;
+}
+
+/* Section: Zanurz się w osobistej transformacji */
+.transformation-section {
+    padding: 50px 10%;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+/* Footer Section */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+}
+
+footer .footer-info {
+    margin-bottom: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
